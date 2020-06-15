@@ -1,0 +1,105 @@
+
+body {
+display: flex;
+justify-content: center;
+}
+h1{
+    color: green; 
+}
+h3{
+    margin:  10px;
+    color: rgb(0, 174, 255);
+}
+.todo-panel{
+    border: 1px solid black;
+    width: 500px;
+    min-height: 20em;
+    margin: 2em;
+    box-shadow: 10px 8px 4px #888;
+}
+.todo-shuru{
+    display: flex;
+   
+    margin:  12px;
+}
+.todo-shuru button{
+    margin: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.todo-shuru input{
+
+   flex-grow: 1;
+   font-size: 1.2em;
+   padding: 3px 20px ;
+    margin: 1px;
+}
+.todo-zhuti{
+    
+    width: 465px;
+    min-height: 17em;
+    margin: 1em;
+    
+}
+.todo-zhuti > .task{
+    display: flex;
+    align-items: center;
+}
+.todo-zhuti > .task > label{
+    flex-grow:1 ;
+}
+.todo-zhuti .contrl > button{
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
+}
+.todo-zhuti .contrl > button:disabled{
+    border: none;
+    background: none;
+    color: gray;
+    
+}
+.todo-zhuti .contrl > button:disabled:hover {
+    font-weight: unset;
+}
+
+
+.todo-zhuti .contrl > button:hover {
+font-weight: bolder;
+
+}
+
+.task.done > label{
+text-decoration: line-through;
+
+
+}
+.todo-zhuti .contrl input
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    border-top-width: 2px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 1.5em;
+    height: 1.5em;
+    
+    border: 1px solid black;
+     margin-left: 10px;
+}
+.task.good .contrl input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    
+    background: url(tankao.png)
+}
+.task.good > label{
+    color: red;
+   
+}
+
